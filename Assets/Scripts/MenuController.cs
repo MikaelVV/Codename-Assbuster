@@ -28,6 +28,12 @@ public class MenuController : MonoBehaviour
         GameIsPaused = false;
     }
 
+    public void MainMenu()
+    {
+        SceneManager.LoadScene("Menu");
+    }
+
+
     public void PauseGame()
     {
         PauseMenuUI.SetActive(true);
