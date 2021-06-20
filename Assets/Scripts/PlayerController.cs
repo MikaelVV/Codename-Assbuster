@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -12,7 +13,7 @@ public class PlayerController : MonoBehaviour
 
     public Slider healthbar;
     public float speed;
-    private Rigidbody2D rigidbody;
+    private new Rigidbody2D rigidbody;
 
     public Animator animator;
 
@@ -20,36 +21,57 @@ public class PlayerController : MonoBehaviour
 
     public SpriteRenderer sprite1;
 
+    public GameObject slot1;
+    public GameObject slot2;
+    public int selectedWeapon = 0;
+
     [SerializeField]
     private Color colorToTurnTo = Color.white;
 
+
+
     void Start()
-    {
+    {   
+        slot1.gameObject.SetActive(true);
+        slot2.gameObject.SetActive(false);
         scene = SceneManager.GetActiveScene();
         playerCurrentHealth = playerMaxHealth;
         rigidbody = GetComponent<Rigidbody2D>();
+        
     }
 
     void Update()
-    {
+    { 
+        
+        if (Input.GetKeyDown(KeyCode.E) && selectedWeapon == 0)
+        {
+            selectedWeapon = 1;
+            slot2.gameObject.SetActive(true);
+            slot1.gameObject.SetActive(false);
+
+        }
+        else if (Input.GetKeyDown(KeyCode.E) && selectedWeapon == 1)
+        {
+            selectedWeapon = 0;
+            slot1.gameObject.SetActive(true);
+            slot2.gameObject.SetActive(false);
+
+        }
+       
         if(playerCurrentHealth <= 0)
         {
             Instantiate(playerDeathFX, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
+
+       
     }
 
     void FixedUpdate()
     {
-        //float moveHorizontal = Input.GetAxis("Horizontal");
-        //float moveVertical = Input.GetAxis("Vertical");
-
         Vector2 movement = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         rigidbody.AddForce(movement * speed);
 
-
-
-        //Lisää vielä keycode jolla nuolinäppäimet toimii
 
         if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
         {
