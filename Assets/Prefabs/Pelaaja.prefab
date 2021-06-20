@@ -295,8 +295,8 @@ MonoBehaviour:
   scene:
     m_Handle: -8928
   sprite1: {fileID: 227623959614428304}
-  slot1: {fileID: 0}
-  slot2: {fileID: 0}
+  slot1: {fileID: 2122732523}
+  slot2: {fileID: 3018936192243354719}
   selectedWeapon: 0
   colorToTurnTo: {r: 1, g: 0.53333336, b: 0.53333336, a: 1}
 --- !u!70 &7675522360986348377
