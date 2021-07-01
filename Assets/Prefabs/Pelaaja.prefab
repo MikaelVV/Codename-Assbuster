@@ -290,7 +290,7 @@ MonoBehaviour:
   playerDeathFX: {fileID: 2147298477185571056, guid: 4a9d607a62476f4429ffd0ec87b392d9,
     type: 3}
   healthbar: {fileID: 0}
-  speed: 200
+  speed: 250
   animator: {fileID: 227623959614428303}
   scene:
     m_Handle: -8928

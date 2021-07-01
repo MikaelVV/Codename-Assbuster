@@ -923,12 +923,6 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!1 &301082906 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2122732523, guid: d3e99a6bd2753eb4299b449432011f2b,
-    type: 3}
-  m_PrefabInstance: {fileID: 227623959670655200}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &335364734
 GameObject:
   m_ObjectHideFlags: 0
@@ -6497,12 +6491,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &729379961 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3018936192243354719, guid: d3e99a6bd2753eb4299b449432011f2b,
-    type: 3}
-  m_PrefabInstance: {fileID: 227623959670655200}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &753000206
 GameObject:
   m_ObjectHideFlags: 0
@@ -14051,14 +14039,6 @@ PrefabInstance:
       propertyPath: healthbar
       value: 
       objectReference: {fileID: 596727380}
-    - target: {fileID: 454568808, guid: d3e99a6bd2753eb4299b449432011f2b, type: 3}
-      propertyPath: slot1
-      value: 
-      objectReference: {fileID: 301082906}
-    - target: {fileID: 454568808, guid: d3e99a6bd2753eb4299b449432011f2b, type: 3}
-      propertyPath: slot2
-      value: 
-      objectReference: {fileID: 729379961}
     - target: {fileID: 227623959614428301, guid: d3e99a6bd2753eb4299b449432011f2b,
         type: 3}
       propertyPath: m_Name
