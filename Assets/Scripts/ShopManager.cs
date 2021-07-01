@@ -20,6 +20,7 @@ public class ShopManager : MonoBehaviour
 
     void Start()
     {
+        shopTokens = PlayerPrefs.GetFloat("shoptokens", 100);
         ShopTokentext.text = shopTokens.ToString() + "$";
 
         //Kaupassa ostettavien esineiden IDt
@@ -70,6 +71,8 @@ public class ShopManager : MonoBehaviour
             shopItems[3, ButtonRef.GetComponent<ShopButtonInfo>().ItemID]++;
             ShopTokentext.text = shopTokens.ToString() + "$";
             ButtonRef.GetComponent<ShopButtonInfo>().Quantitytext.text = shopItems[3, ButtonRef.GetComponent<ShopButtonInfo>().ItemID].ToString();
+
+            PlayerPrefs.SetFloat("shoptokens", shopTokens);
         }
     }
 }
