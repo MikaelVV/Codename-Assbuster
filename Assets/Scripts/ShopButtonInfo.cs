@@ -14,7 +14,7 @@ public class ShopButtonInfo : MonoBehaviour
 
     void Start()
     {
-        ShopManager.GetComponent<ShopManager>().shopItems[3, ItemID] = PlayerPrefs.GetInt("shopitems", ShopManager.GetComponent<ShopManager>().shopItems[3, ItemID]);
+       ShopManager.GetComponent<ShopManager>().shopItems[3, ItemID] = PlayerPrefs.GetInt("shopitems", ShopManager.GetComponent<ShopManager>().shopItems[3, ItemID] = 0);
     }
 
     void Update()
@@ -24,8 +24,9 @@ public class ShopButtonInfo : MonoBehaviour
 
         if(ShopManager.GetComponent<ShopManager>().shopItems[3, ItemID] == 1)
         {
+            PlayerPrefs.SetInt("shopitems", ShopManager.GetComponent<ShopManager>().shopItems[3, ItemID] = 1);
+            ShopManager.GetComponent<ShopManager>().shopItems[3, ItemID]++;
             button.interactable = false;
-            PlayerPrefs.SetInt("shopitems", ShopManager.GetComponent<ShopManager>().shopItems[3, ItemID]);
         }
     }
 }
