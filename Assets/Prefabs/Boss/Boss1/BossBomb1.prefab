@@ -97,9 +97,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 845fba840e52b3e42bb8c28a969ab718, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DeathEffect: {fileID: 0}
+  DeathEffect: {fileID: 8058748850407703564, guid: 846d8b796a275824288ef4b6a30cfa38,
+    type: 3}
   time: 7
-  FxPoint: {fileID: 0}
+  FxPoint: {fileID: 6246169024444868069}
 --- !u!58 &3300038940584041463
 CircleCollider2D:
   m_ObjectHideFlags: 0
