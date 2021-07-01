@@ -26,6 +26,7 @@ public class EnemyHealth : MonoBehaviour
         {
             Instantiate(DeathFx, transform.position, Quaternion.identity);
             Destroy(gameObject);
+            GameManager.instance.AddPoint();
         }
 
     }
