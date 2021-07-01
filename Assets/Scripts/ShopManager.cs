@@ -28,20 +28,18 @@ public class ShopManager : MonoBehaviour
         shopItems[1, 8] = 8;
         shopItems[1, 9] = 9;
         shopItems[1, 10] = 10;
-        shopItems[1, 11] = 11;
 
         //Hinnat
-        shopItems[2, 1] = 1;
+        shopItems[2, 1] = 2;
         shopItems[2, 2] = 2;
-        shopItems[2, 3] = 3;
-        shopItems[2, 4] = 4;
-        shopItems[2, 5] = 5;
-        shopItems[2, 6] = 6;
-        shopItems[2, 7] = 7;
-        shopItems[2, 8] = 8;
-        shopItems[2, 9] = 9;
-        shopItems[2, 10] = 10;
-        shopItems[2, 11] = 11;
+        shopItems[2, 3] = 2;
+        shopItems[2, 4] = 2;
+        shopItems[2, 5] = 2;
+        shopItems[2, 6] = 2;
+        shopItems[2, 7] = 2;
+        shopItems[2, 8] = 3;
+        shopItems[2, 9] = 3;
+        shopItems[2, 10] = 2;
 
         //Määrä
         shopItems[3, 1] = 0;
@@ -54,7 +52,6 @@ public class ShopManager : MonoBehaviour
         shopItems[3, 8] = 0;
         shopItems[3, 9] = 0;
         shopItems[3, 10] = 0;
-        shopItems[3, 11] = 0;
     }
 
 
