@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class ShopButtonInfo : MonoBehaviour
 {
+    public Button button;
 
     public int ItemID;
     public Text priceText;
@@ -16,5 +17,10 @@ public class ShopButtonInfo : MonoBehaviour
     {
         priceText.text = "$" + ShopManager.GetComponent<ShopManager>().shopItems[2, ItemID].ToString();
         Quantitytext.text = ShopManager.GetComponent<ShopManager>().shopItems[3, ItemID].ToString();
+
+        if(ShopManager.GetComponent<ShopManager>().shopItems[3, ItemID] == 1)
+        {
+            button.interactable = false;
+        }
     }
 }

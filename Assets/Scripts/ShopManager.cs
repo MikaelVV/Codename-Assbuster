@@ -6,16 +6,21 @@ using UnityEngine.EventSystems;
 
 public class ShopManager : MonoBehaviour
 {
+    public static ShopManager instance;
+
 
     public int[,] shopItems = new int[11,11];
     public float shopTokens;
     public Text ShopTokentext;
 
-
+    private void Awake()
+    {
+        instance = this;
+    }
 
     void Start()
     {
-        ShopTokentext.text = "$" + shopTokens.ToString();
+        ShopTokentext.text = shopTokens.ToString() + "$";
 
         //Kaupassa ostettavien esineiden IDt
         shopItems[1, 1] = 1;
@@ -63,7 +68,7 @@ public class ShopManager : MonoBehaviour
         {
             shopTokens -= shopItems[2, ButtonRef.GetComponent<ShopButtonInfo>().ItemID];
             shopItems[3, ButtonRef.GetComponent<ShopButtonInfo>().ItemID]++;
-            ShopTokentext.text = "" + shopTokens.ToString();
+            ShopTokentext.text = shopTokens.ToString() + "$";
             ButtonRef.GetComponent<ShopButtonInfo>().Quantitytext.text = shopItems[3, ButtonRef.GetComponent<ShopButtonInfo>().ItemID].ToString();
         }
     }
