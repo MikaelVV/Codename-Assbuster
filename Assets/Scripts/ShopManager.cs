@@ -58,6 +58,7 @@ public class ShopManager : MonoBehaviour
         shopItems[3, 8] = 0;
         shopItems[3, 9] = 0;
         shopItems[3, 10] = 0;
+
     }
 
 
@@ -65,7 +66,7 @@ public class ShopManager : MonoBehaviour
     {
         GameObject ButtonRef = GameObject.FindGameObjectWithTag("Event").GetComponent<EventSystem>().currentSelectedGameObject;
 
-        if(shopTokens >= shopItems[2, ButtonRef.GetComponent<ShopButtonInfo>().ItemID])
+        if (shopTokens >= shopItems[2, ButtonRef.GetComponent<ShopButtonInfo>().ItemID])
         {
             shopTokens -= shopItems[2, ButtonRef.GetComponent<ShopButtonInfo>().ItemID];
             shopItems[3, ButtonRef.GetComponent<ShopButtonInfo>().ItemID]++;

@@ -12,6 +12,10 @@ public class ShopButtonInfo : MonoBehaviour
     public Text Quantitytext;
     public GameObject ShopManager;
 
+    void Start()
+    {
+        ShopManager.GetComponent<ShopManager>().shopItems[3, ItemID] = PlayerPrefs.GetInt("shopitems", ShopManager.GetComponent<ShopManager>().shopItems[3, ItemID]);
+    }
 
     void Update()
     {
@@ -21,6 +25,7 @@ public class ShopButtonInfo : MonoBehaviour
         if(ShopManager.GetComponent<ShopManager>().shopItems[3, ItemID] == 1)
         {
             button.interactable = false;
+            PlayerPrefs.SetInt("shopitems", ShopManager.GetComponent<ShopManager>().shopItems[3, ItemID]);
         }
     }
 }
