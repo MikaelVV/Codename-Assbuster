@@ -15,6 +15,8 @@ public class WeaponSwitching : MonoBehaviour
         slot2.gameObject.SetActive(false);
     }
 
+    //ammunta loppuu ku vaihtaa asenappi pohjassa
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.E) && selectedWeapon == 0)
@@ -27,9 +29,8 @@ public class WeaponSwitching : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.E) && selectedWeapon == 1)
         {   
             selectedWeapon = 0;
-            slot1.gameObject.SetActive(true);
             slot2.gameObject.SetActive(false);
-
+            slot1.gameObject.SetActive(true);
         }
     }
 
