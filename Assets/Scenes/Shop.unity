@@ -6954,7 +6954,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 688420949}
-  - component: {fileID: 688420950}
   m_Layer: 5
   m_Name: Shop items
   m_TagString: Untagged
@@ -6993,25 +6992,6 @@ RectTransform:
   m_AnchoredPosition: {x: -154, y: 52}
   m_SizeDelta: {x: 1360.5784, y: 805.5609}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!95 &688420950
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 688420948}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 6d267236e9dba78448d1d70dda096be0, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &739955451
 GameObject:
   m_ObjectHideFlags: 0
@@ -7025,6 +7005,7 @@ GameObject:
   - component: {fileID: 739955453}
   - component: {fileID: 739955452}
   - component: {fileID: 739955456}
+  - component: {fileID: 739955457}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -7132,6 +7113,25 @@ MonoBehaviour:
   animator: {fileID: 678002823}
   time: 1.4
   time2: 1
+--- !u!95 &739955457
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 739955451}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6d267236e9dba78448d1d70dda096be0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &851429082
 GameObject:
   m_ObjectHideFlags: 0
@@ -9375,8 +9375,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 688420950}
-        m_MethodName: 
+      - m_Target: {fileID: 739955456}
+        m_MethodName: arrowRight
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11202,8 +11202,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 688420950}
-        m_MethodName: 
+      - m_Target: {fileID: 739955456}
+        m_MethodName: arrowLeft
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
