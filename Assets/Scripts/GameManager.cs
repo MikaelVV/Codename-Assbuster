@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
     {
         instance = this;
     }
+
     void Start()
     {
         highscore = PlayerPrefs.GetInt("highscore", 0);
@@ -32,6 +33,12 @@ public class GameManager : MonoBehaviour
         {
             PlayerPrefs.SetInt("highscore", score);
         }
+    }
+
+    public void AddPointOnHit()
+    {
+        score += 3;
+        scoreText.text = score.ToString() + " SCORE";
     }
 
     void Update()

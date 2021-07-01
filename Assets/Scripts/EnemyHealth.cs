@@ -35,6 +35,7 @@ public class EnemyHealth : MonoBehaviour
     {
         enemyCurrentHealth -= enemyDamageTaken;
         StartCoroutine("FlashColor");
+        GameManager.instance.AddPointOnHit();
 
     }
 
