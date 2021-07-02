@@ -8,10 +8,10 @@ public class ShopManager : MonoBehaviour
 {
     public static ShopManager instance;
 
-
     public int[,] shopItems = new int[11,11];
     public float shopTokens;
     public Text ShopTokentext;
+
 
     private void Awake()
     {
@@ -20,8 +20,9 @@ public class ShopManager : MonoBehaviour
 
     void Start()
     {
-        shopTokens = PlayerPrefs.GetFloat("shoptokens", 100);
+        shopTokens = PlayerPrefs.GetFloat("shopTokens", 100);
         ShopTokentext.text = shopTokens.ToString() + "$";
+        //ShopButtonInfo.instance.Amount();
 
         //Kaupassa ostettavien esineiden IDt
         shopItems[1, 1] = 1;
@@ -61,10 +62,10 @@ public class ShopManager : MonoBehaviour
 
     }
 
-
     public void BuyItems()
     {
         GameObject ButtonRef = GameObject.FindGameObjectWithTag("Event").GetComponent<EventSystem>().currentSelectedGameObject;
+
 
         if (shopTokens >= shopItems[2, ButtonRef.GetComponent<ShopButtonInfo>().ItemID])
         {
@@ -73,7 +74,13 @@ public class ShopManager : MonoBehaviour
             ShopTokentext.text = shopTokens.ToString() + "$";
             ButtonRef.GetComponent<ShopButtonInfo>().Quantitytext.text = shopItems[3, ButtonRef.GetComponent<ShopButtonInfo>().ItemID].ToString();
 
-            PlayerPrefs.SetFloat("shoptokens", shopTokens);
+            PlayerPrefs.SetFloat("shopTokens", shopTokens);
+        }
+
+        if (shopTokens < shopItems[2, ButtonRef.GetComponent<ShopButtonInfo>().ItemID])
+        {
+            //ButtonRef.GetComponent<ShopButtonInfo>().button.interactable = false;
+            Debug.Log("Ei ole rahaa ");
         }
     }
 }
