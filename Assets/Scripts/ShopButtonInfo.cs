@@ -32,10 +32,11 @@ public class ShopButtonInfo : MonoBehaviour
 
     public void Button()
     {
-        if(ItemID == 1)
+        if(ShopManager.GetComponent<ShopManager>().shopItems[3, ItemID] == 1)
         {
             button.interactable = false;
-        }else
+        }
+        else
         {
             button.interactable = true;
         }

@@ -7,6 +7,7 @@ public class ShopData
 {
     public int[,] shopitems;
 
+
     public ShopData(ShopManager shopmanager)
     {
         shopitems = shopmanager.shopItems;

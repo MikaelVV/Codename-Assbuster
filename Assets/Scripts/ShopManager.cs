@@ -12,7 +12,6 @@ public class ShopManager : MonoBehaviour
     public float shopTokens;
     public Text ShopTokentext;
 
-    public bool isBought;
 
     private void Awake()
     {
@@ -90,11 +89,9 @@ public class ShopManager : MonoBehaviour
                 Debug.Log("Tuote osettu!");
                 //PlayerPrefs.SetInt("shopItems", shopItems[3, ButtonRef.GetComponent<ShopButtonInfo>().ItemID] = 1);
                 ButtonRef.GetComponent<ShopButtonInfo>().button.interactable = false;
-                //PlayerPrefs.Save();
                 break;
             default:
-                Debug.Log("Tuotteita ei ole vielä ostettu");
-                PlayerPrefs.GetInt("shopitems", shopItems[3, ButtonRef.GetComponent<ShopButtonInfo>().ItemID] = 0);
+                Debug.Log("default");
                 break;
         }
     }
