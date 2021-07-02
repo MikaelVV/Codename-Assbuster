@@ -87,9 +87,9 @@ public class ShopManager : MonoBehaviour
         {
             case 1:
                 Debug.Log("Tuote osettu!");
-                PlayerPrefs.SetInt("shopItems", shopItems[3, ButtonRef.GetComponent<ShopButtonInfo>().ItemID] = 1);
+                //PlayerPrefs.SetInt("shopItems", shopItems[3, ButtonRef.GetComponent<ShopButtonInfo>().ItemID] = 1);
                 ButtonRef.GetComponent<ShopButtonInfo>().button.interactable = false;
-                PlayerPrefs.Save();
+                //PlayerPrefs.Save();
                 break;
             default:
                 Debug.Log("Tuotteita ei ole vielä ostettu");
@@ -97,4 +97,17 @@ public class ShopManager : MonoBehaviour
                 break;
         }
     }
+
+    public void SaveShop()
+    {
+        SavingSystem.SaveShop(this);
+    }
+
+    public void LoadShop()
+    {
+        ShopData data = SavingSystem.LoadShop();
+
+        shopItems = data.shopitems;
+        ShopButtonInfo.instance.Button();
+    } 
 }
