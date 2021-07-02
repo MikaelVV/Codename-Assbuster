@@ -12,6 +12,7 @@ public class ShopManager : MonoBehaviour
     public float shopTokens;
     public Text ShopTokentext;
 
+    public bool isBought;
 
     private void Awake()
     {

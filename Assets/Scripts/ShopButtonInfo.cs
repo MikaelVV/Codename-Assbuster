@@ -21,7 +21,7 @@ public class ShopButtonInfo : MonoBehaviour
 
     void Start()
     {
-       
+
     }
 
     void Update()
@@ -32,7 +32,7 @@ public class ShopButtonInfo : MonoBehaviour
 
     public void Button()
     {
-        if(ShopManager.GetComponent<ShopManager>().shopItems[3, ItemID] == 1)
+        if(ItemID == 1)
         {
             button.interactable = false;
         }else
