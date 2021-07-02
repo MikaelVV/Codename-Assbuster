@@ -22,7 +22,6 @@ public class ShopManager : MonoBehaviour
     {
         shopTokens = PlayerPrefs.GetFloat("shopTokens", 100);
         ShopTokentext.text = shopTokens.ToString() + "$";
-        //ShopButtonInfo.instance.Amount();
 
         //Kaupassa ostettavien esineiden IDt
         shopItems[1, 1] = 1;
@@ -81,6 +80,21 @@ public class ShopManager : MonoBehaviour
         {
             //ButtonRef.GetComponent<ShopButtonInfo>().button.interactable = false;
             Debug.Log("Ei ole rahaa ");
+        }
+
+        //Tässä switch casessa kaupassa ostettujen aseiden / poweruppien pitäisi tallentua, niinkuin tallentuukin, mutta vain pelin päälläolon ajaksi. En ole vielä saanut tätä toimimaan täysin.
+        switch (shopItems[3, ButtonRef.GetComponent<ShopButtonInfo>().ItemID])
+        {
+            case 1:
+                Debug.Log("Tuote osettu!");
+                PlayerPrefs.SetInt("shopItems", shopItems[3, ButtonRef.GetComponent<ShopButtonInfo>().ItemID] = 1);
+                ButtonRef.GetComponent<ShopButtonInfo>().button.interactable = false;
+                PlayerPrefs.Save();
+                break;
+            default:
+                Debug.Log("Tuotteita ei ole vielä ostettu");
+                PlayerPrefs.GetInt("shopitems", shopItems[3, ButtonRef.GetComponent<ShopButtonInfo>().ItemID] = 0);
+                break;
         }
     }
 }
