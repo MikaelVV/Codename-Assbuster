@@ -8,7 +8,7 @@ public class Shooting : MonoBehaviour
     public GameObject bullet;
     public Transform firepoint;
     public float time;
-    bool CantShoot;
+    public bool CantShoot;
 
 
     void Update()
@@ -16,6 +16,13 @@ public class Shooting : MonoBehaviour
         if (Input.GetKey(KeyCode.Space) == true && CantShoot == false)
         {
             Shoot();
+        }
+
+        if (Input.GetKey(KeyCode.E))
+        {
+            Debug.Log("asd");
+            CantShoot = false;
+
         }
     }
 
@@ -25,7 +32,7 @@ public class Shooting : MonoBehaviour
         StartCoroutine("Cooldown");
     }
 
-    public IEnumerator Cooldown()
+    IEnumerator Cooldown()
 
     {
         CantShoot = true;

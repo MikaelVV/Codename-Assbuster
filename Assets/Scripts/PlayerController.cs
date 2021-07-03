@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     public int playerCurrentHealth;
     public GameObject playerDeathFX;
 
+
     public Slider healthbar;
     public float speed;
     private new Rigidbody2D rigidbody;
@@ -31,7 +32,7 @@ public class PlayerController : MonoBehaviour
 
 
     void Start()
-    {   
+    {
         slot1.gameObject.SetActive(true);
         slot2.gameObject.SetActive(false);
         scene = SceneManager.GetActiveScene();
