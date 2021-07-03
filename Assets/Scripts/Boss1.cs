@@ -19,11 +19,11 @@ public class Boss1 : MonoBehaviour
     public Transform firepoint2;
     bool CantShoot;
     bool ShootStop;
-    bool BombLock;
     bool ShootIsEnabled;
     public float ShootTime;
     public SpriteRenderer sprite1;
     public SpriteRenderer sprite2;
+    public bool BombLock;
 
     [SerializeField]
     private Color colorToTurnTo = Color.white;

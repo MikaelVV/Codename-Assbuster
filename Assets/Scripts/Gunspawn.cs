@@ -13,9 +13,4 @@ public class Gunspawn : MonoBehaviour
         Instantiate(Gun, transform.position, Quaternion.identity, transform);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
