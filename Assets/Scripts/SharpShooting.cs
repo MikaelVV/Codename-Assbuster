@@ -7,14 +7,8 @@ public class SharpShooting : MonoBehaviour
     public Animator animator;
     public GameObject bullet;
     public Transform firepoint;
-    bool CantShoot;
+    private bool CantShoot = false;
     public float time;
-
-    void Start()
-    {
-
-    }
-
 
     void FixedUpdate()
     {

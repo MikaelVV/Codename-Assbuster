@@ -19,11 +19,11 @@ public class Boss1 : MonoBehaviour
     public Transform firepoint2;
     bool CantShoot;
     bool ShootStop;
-    bool BombLock;
     bool ShootIsEnabled;
     public float ShootTime;
     public SpriteRenderer sprite1;
     public SpriteRenderer sprite2;
+    public bool BombLock;
 
     [SerializeField]
     private Color colorToTurnTo = Color.white;
@@ -73,18 +73,18 @@ public class Boss1 : MonoBehaviour
     }
 
     //tokan vaiheen pommit. Tarvii vielä sen että randomisoi kahen pommi tyypin välillä
-    //public void Bombs2()
-    //{
-        //tällä hetkellä particle effectin luominen spawnaa niitä pommeja aivan vitusti
-        //StartCoroutine("BombCooldown");
-    //}
+    public void Bombs2()
+    {
+       
+        StartCoroutine("BombCooldown");
+    }
 
-    //public IEnumerator BombCooldown()
-    //{
-        //BombLock = true;
-        //yield return new WaitForSeconds(BombTime);
-        //BombLock = false;
-    //}
+    public IEnumerator BombCooldown()
+    {
+        BombLock = true;
+        yield return new WaitForSeconds(BombTime);
+        BombLock = false;
+        }
 
     //Kolmanen vaiheen pommi
     public void Bomb3()
