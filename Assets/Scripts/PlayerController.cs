@@ -42,8 +42,7 @@ public class PlayerController : MonoBehaviour
     }
 
     void Update()
-    { 
-        
+    {
         if (Input.GetKeyDown(KeyCode.E) && selectedWeapon == 0)
         {
             selectedWeapon = 1;
@@ -58,8 +57,8 @@ public class PlayerController : MonoBehaviour
             slot2.gameObject.SetActive(false);
 
         }
-       
-        if(playerCurrentHealth <= 0)
+
+        if (playerCurrentHealth <= 0)
         {
             Instantiate(playerDeathFX, transform.position, Quaternion.identity);
             Destroy(gameObject);

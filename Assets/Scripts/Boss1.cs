@@ -79,12 +79,12 @@ public class Boss1 : MonoBehaviour
         StartCoroutine("BombCooldown");
     }
 
-    public IEnumerator BombCooldown()
+    /*public IEnumerator BombCooldown()
     {
         BombLock = true;
         yield return new WaitForSeconds(BombTime);
-        BombLock = false;
-        }
+        BombLock = false; 
+        } */
 
     //Kolmanen vaiheen pommi
     public void Bomb3()
