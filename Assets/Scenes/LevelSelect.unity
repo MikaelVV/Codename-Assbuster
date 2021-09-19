@@ -3217,6 +3217,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: koristeet
       objectReference: {fileID: 0}
+    - target: {fileID: 3650179834389582366, guid: db99cd97b6d8ffd489db7819d63b0977,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3650179834389582367, guid: db99cd97b6d8ffd489db7819d63b0977,
         type: 3}
       propertyPath: m_LocalPosition.x
