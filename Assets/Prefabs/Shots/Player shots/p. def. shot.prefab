@@ -154,7 +154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speedwagon: 60
   enemyDamageGiven: 3
-  bossDamageGiven: 65
+  bossDamageGiven: 3
   DeathEffect: {fileID: 7861974194392742149, guid: 40f667d96ead41d49ab98507adbdb685,
     type: 3}
   FxPoint: {fileID: 5355863347312103425}
@@ -171,7 +171,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: aa3e9d56d401e3448aaeb5a441843251, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.2
+  m_Volume: 0.1
   m_Pitch: 0.4
   Loop: 0
   Mute: 0
