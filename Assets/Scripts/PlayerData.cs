@@ -13,7 +13,7 @@ public class PlayerData
     public int price = 2;
     public int quantity = 11;
 
-    public int[,] shopitems;
+    public bool[] itemsUnlocked;
 
 
     /* public void Awake()

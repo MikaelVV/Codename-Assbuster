@@ -6,10 +6,16 @@ using UnityEngine.SceneManagement;
 
 public  class SavingSystem : MonoBehaviour
 {
-
+    public static SavingSystem instance;
     public PlayerData data;
 
     private string file = "player.txt";
+
+
+    private void Awake()
+    {
+        instance = this;
+    }
 
     public void Start()
     {
@@ -29,6 +35,9 @@ public  class SavingSystem : MonoBehaviour
         data = new PlayerData();
         string json = ReadFromFile(file);
         JsonUtility.FromJsonOverwrite(json, data);
+
+        if(data.itemsUnlocked == null)
+            data.itemsUnlocked = new bool[10] { false, false, false, false, false, false, false, false, false, false };
     }
 
     private void WriteToFile(string fileName, string json)
