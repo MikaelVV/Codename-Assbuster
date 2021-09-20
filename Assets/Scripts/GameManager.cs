@@ -9,7 +9,6 @@ public class GameManager : MonoBehaviour
     public SavingSystem savingSystem;
 
     public Text scoreText;
-    public Text highscoreText;
 
 
     private void Awake()
@@ -20,33 +19,28 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         savingSystem.Load();
-        scoreText.text = savingSystem.data.score.ToString() + " SCORE";
-        highscoreText.text = savingSystem.data.highscore.ToString() + " HIGHSCORE";
+        scoreText.text = savingSystem.data.score.ToString() + " HIGHSCORE";
         /*highscore = PlayerPrefs.GetInt("highscore", 0);
         scoreText.text = score.ToString() + " SCORE";
         highscoreText.text = " HIGHSCORE " + highscore.ToString(); */
     }
 
-    public void AddPoint()
+    public void AddPointOnDeath()
     {
-        savingSystem.data.highscore = savingSystem.data.score;
-        highscoreText.text = savingSystem.data.highscore.ToString() + " SCORE";
-
-        if(savingSystem.data.highscore < savingSystem.data.score)
-        {
-            highscoreText.text = savingSystem.data.highscore.ToString() + " HIGHSCORE";
-        }
+        savingSystem.data.score += 20;
         savingSystem.Save();
     }
 
     public void AddPointOnHit()
     {
         savingSystem.data.score += 3;
-        scoreText.text = savingSystem.data.score.ToString() + " SCORE";
+
+        scoreText.text = savingSystem.data.score.ToString() + " HIGHSCORE";
+        savingSystem.Save();
     } 
 
     void Update()
     {
-        AddPoint();  
+
     }
 }

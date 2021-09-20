@@ -43,11 +43,12 @@ public  class SavingSystem : MonoBehaviour
             using (StreamReader reader = new StreamReader(path))
             {
                 string json = reader.ReadToEnd();
+                Debug.Log(path);
                 return json;
             }
         }
         else
-            Debug.LogWarning("File not found!!");
+            Debug.LogWarning("Tallennustiedostoa ei löydy!!");
 
         return "";
     }

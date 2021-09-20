@@ -7480,18 +7480,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyDamageGiven: 1
   toxinTickTimers: 
---- !u!114 &1162926157 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1162926157, guid: 726152eb60d8acc43ab6b4f823d57b53,
-    type: 3}
-  m_PrefabInstance: {fileID: 7940731038169944206}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1176594967
 GameObject:
   m_ObjectHideFlags: 0
@@ -14198,7 +14186,7 @@ PrefabInstance:
         type: 3}
       propertyPath: highscoreText
       value: 
-      objectReference: {fileID: 1162926157}
+      objectReference: {fileID: 0}
     - target: {fileID: 3460267455692114222, guid: 58ac97bab09d91142ad553b4d470ca9e,
         type: 3}
       propertyPath: savingSystem
@@ -14484,6 +14472,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1044814429}
+    - target: {fileID: 3148538656918223924, guid: 726152eb60d8acc43ab6b4f823d57b53,
+        type: 3}
+      propertyPath: savingSystem
+      value: 
+      objectReference: {fileID: 1246000873}
     - target: {fileID: 7940731037531914276, guid: 726152eb60d8acc43ab6b4f823d57b53,
         type: 3}
       propertyPath: m_AnchorMax.x

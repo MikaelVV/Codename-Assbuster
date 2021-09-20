@@ -9,6 +9,7 @@ public class MenuController : MonoBehaviour
     public static bool GameIsPaused = false;
 
     public GameObject PauseMenuUI;
+    public SavingSystem savingSystem;
 
     public void PlayGame()
     {
@@ -18,6 +19,7 @@ public class MenuController : MonoBehaviour
 
     public void QuitGame()
     {
+        savingSystem.Save();
         Application.Quit();
     }
 

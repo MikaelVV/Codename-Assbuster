@@ -7,7 +7,6 @@ using UnityEngine.SceneManagement;
 [System.Serializable]
 public class PlayerData
 {
-    public int highscore = 0;
     public int score = 0;
 
 

@@ -412,6 +412,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PauseMenuUI: {fileID: 5008847161280217329}
+  savingSystem: {fileID: -8599738965220930533, guid: 45917edf93c59cf439b4311c4ad24272,
+    type: 3}
 --- !u!1 &5008847162642666224
 GameObject:
   m_ObjectHideFlags: 0
