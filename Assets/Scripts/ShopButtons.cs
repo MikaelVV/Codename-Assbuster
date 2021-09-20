@@ -39,11 +39,11 @@ public class ShopButtons : MonoBehaviour
     {
         if (savingSystem.data.itemsUnlocked[currentItem])
         {
-            button.gameObject.SetActive(true);
+            button.interactable = true;
         }
         else
         {
-            button.gameObject.SetActive(false);
+            button.interactable = false;
 
         }
     }
