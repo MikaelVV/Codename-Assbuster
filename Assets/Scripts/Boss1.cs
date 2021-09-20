@@ -24,6 +24,9 @@ public class Boss1 : MonoBehaviour
     public SpriteRenderer sprite1;
     public SpriteRenderer sprite2;
     public bool BombLock;
+    public int vaulebob = 0;
+    public int BombTime;
+    public bool Lock = true;
 
     [SerializeField]
     private Color colorToTurnTo = Color.white;
@@ -40,22 +43,37 @@ public class Boss1 : MonoBehaviour
         if (CantShoot == false && ShootStop == false && ShootIsEnabled == true)
             {
             Shoot();
-            }
+        }
 
         if (bossCurrentHealth <= 400)
         {
-            BombLock = false;
             animator.SetBool("Phase2", true);
+            Bombs();
         }
 
-        // HUOM. jos tämä on else if niin bossi ei vaihda vikaan vaiheeseen
-        if (bossCurrentHealth <= 120)
+        if (bossCurrentHealth <= 400 && bossCurrentHealth >= 120 && Lock == true)
         {
+            
+            
+            BombLock = false;
+            Lock = false;
+
+
+        }
+
+
+            // HUOM. jos tämä on else if niin bossi ei vaihda vikaan vaiheeseen
+            if (bossCurrentHealth <= 120)
+        {
+            Lock = true;
             ShootStop = true;
             BombLock = true;
             animator.SetBool("Phase3", true);
         }
+        
     }
+
+
     //Ekan ja tokan vaiheen ampuminen
     public void Shoot()
     {
@@ -73,18 +91,33 @@ public class Boss1 : MonoBehaviour
     }
 
     //tokan vaiheen pommit. Tarvii vielä sen että randomisoi kahen pommi tyypin välillä
-    public void Bombs2()
+    public void Bombs()
     {
-       
-        StartCoroutine("BombCooldown");
-    }
+        System.Random rnd = new System.Random();
 
-    /*public IEnumerator BombCooldown()
+        vaulebob = rnd.Next(1,3);
+
+        if (vaulebob == 1 && BombLock == false && Lock == false)
+        { 
+            Instantiate(BossBomb1, transform.position, Quaternion.identity);
+            StartCoroutine("BombCooldown");
+        }
+
+        else if (vaulebob == 2 && BombLock == false && Lock == false)
+        {
+            Instantiate(BossBomb2, transform.position, Quaternion.identity);
+            StartCoroutine("BombCooldown");
+        }
+    }
+    
+
+
+    public IEnumerator BombCooldown()
     {
         BombLock = true;
         yield return new WaitForSeconds(BombTime);
-        BombLock = false; 
-        } */
+        BombLock = false;
+        } 
 
     //Kolmanen vaiheen pommi
     public void Bomb3()

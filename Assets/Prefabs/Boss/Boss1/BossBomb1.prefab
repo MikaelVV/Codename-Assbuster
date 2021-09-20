@@ -130,7 +130,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 6039718278353653355}
-  speedwagon: 2
+  speedwagon: 5
   DamageGiven: 2
   DeathEffect: {fileID: 3135222131110441071, guid: e4b7e12c794e144438b55e17dfea09e7,
     type: 3}
