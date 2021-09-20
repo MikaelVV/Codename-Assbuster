@@ -2,75 +2,58 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
-using System.Runtime.Serialization.Formatters.Binary;
-using System.Text;
 using UnityEngine.SceneManagement;
 
-public static class SavingSystem
+public  class SavingSystem : MonoBehaviour
 {
 
-    public static void SavePlayer (PlayerController player)
+    public PlayerData data;
+
+    private string file = "player.txt";
+
+    public void Save()
     {
-        BinaryFormatter formatter = new BinaryFormatter();
-        string path = Application.persistentDataPath + "/player.save";
-        FileStream stream = new FileStream(path, FileMode.Create);
-
-        PlayerData data = new PlayerData(player);
-
-        formatter.Serialize(stream, data);
-        stream.Close();
+        string json = JsonUtility.ToJson(data);
+        WriteToFile(file, json);
     }
 
-    public static void SaveShop (ShopManager shopmanager)
+    public void Load()
     {
-        BinaryFormatter formatter = new BinaryFormatter();
-        string path = Application.persistentDataPath + "/shopdata.fun";
-        FileStream stream = new FileStream(path, FileMode.Create);
-
-        ShopData data = new ShopData(shopmanager);
-
-        formatter.Serialize(stream, data);
-        stream.Close();
+        data = new PlayerData();
+        string json = ReadFromFile(file);
+        JsonUtility.FromJsonOverwrite(json, data);
     }
 
-    public static ShopData LoadShop()
+    private void WriteToFile(string fileName, string json)
     {
-        string path = Application.persistentDataPath + "/shopdata.fun";
-        if(File.Exists(path))
+        string path = GetFilePath(fileName);
+        FileStream fileStream = new FileStream(path, FileMode.Create);
+
+        using (StreamWriter writer = new StreamWriter(fileStream))
         {
-            BinaryFormatter formatter = new BinaryFormatter();
-            FileStream stream = new FileStream(path, FileMode.Open);
-
-            ShopData data = formatter.Deserialize(stream) as ShopData;
-            stream.Close();
-
-            return data;
-
-        }else
-        {
-            Debug.LogError("Savefile not found");
-            return null;
+            writer.Write(json);
         }
     }
 
-    public static PlayerData LoadPlayer()
+    private string ReadFromFile(string fileName)
     {
-        string path = Application.persistentDataPath + "/player.save";
-        if(File.Exists(path))
+        string path = GetFilePath(fileName);
+        if (File.Exists(path))
         {
-            BinaryFormatter formatter = new BinaryFormatter();
-            FileStream stream = new FileStream(path, FileMode.Open);
-
-            PlayerData data = formatter.Deserialize(stream) as PlayerData;
-            stream.Close();
-
-            return data;
-
-        } else
-        {
-            Debug.LogError("Tallennusta ei löytynyt kohteesta" + path);
-            return null;
+            using (StreamReader reader = new StreamReader(path))
+            {
+                string json = reader.ReadToEnd();
+                return json;
+            }
         }
+        else
+            Debug.LogWarning("File not found!!");
+
+        return "";
     }
 
+    private string GetFilePath(string fileName)
+    {
+        return Application.persistentDataPath + "/" + fileName;
+    }
 }

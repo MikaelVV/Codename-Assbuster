@@ -108,27 +108,6 @@ public class PlayerController : MonoBehaviour
         StartCoroutine("FlashColor");
     }
 
-    public void SavePlayer()
-    {
-        SavingSystem.SavePlayer(this);
-        PlayerPrefs.SetInt ("Level", SceneManager.GetActiveScene().buildIndex);
-        Debug.Log("Tallennettu onnistuneesti");
-    }
-
-    public void LoadPlayer()
-    {
-        PlayerData data = SavingSystem.LoadPlayer();
-
-        scene = data.scene;
-        playerCurrentHealth = data.health;
-
-        Vector2 position;
-        position.x = data.position[0];
-        position.y = data.position[1];
-        transform.position = position;
-        SceneManager.LoadScene(PlayerPrefs.GetInt("Level"));
-    }
-
     public IEnumerator FlashColor()
     {
         sprite1.color = colorToTurnTo;
