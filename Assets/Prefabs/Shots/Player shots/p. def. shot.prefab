@@ -154,7 +154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speedwagon: 60
   enemyDamageGiven: 3
-  bossDamageGiven: 65
+  bossDamageGiven: 3
   DeathEffect: {fileID: 7861974194392742149, guid: 40f667d96ead41d49ab98507adbdb685,
     type: 3}
   FxPoint: {fileID: 5355863347312103425}
