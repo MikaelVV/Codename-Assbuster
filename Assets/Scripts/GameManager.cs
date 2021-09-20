@@ -20,9 +20,6 @@ public class GameManager : MonoBehaviour
     {
         savingSystem.Load();
         scoreText.text = savingSystem.data.score.ToString() + " HIGHSCORE";
-        /*highscore = PlayerPrefs.GetInt("highscore", 0);
-        scoreText.text = score.ToString() + " SCORE";
-        highscoreText.text = " HIGHSCORE " + highscore.ToString(); */
     }
 
     public void AddPointOnDeath()

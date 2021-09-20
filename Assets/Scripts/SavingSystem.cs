@@ -11,6 +11,11 @@ public  class SavingSystem : MonoBehaviour
 
     private string file = "player.txt";
 
+    public void Start()
+    {
+        Load();
+    }
+
     public void Save()
     {
         string json = JsonUtility.ToJson(data);
