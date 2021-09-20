@@ -1,12 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.IO;
 using UnityEngine.SceneManagement;
 
 [System.Serializable]
 public class PlayerData
 {
-    public Scene scene;
+   /* public Scene scene;
     public int health;
     public float[] position;
 
@@ -18,6 +19,6 @@ public class PlayerData
         position = new float[2];
         position[0] = player.transform.position.x;
         position[1] = player.transform.position.y;
-    }
+    } */
 
 }

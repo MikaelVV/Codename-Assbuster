@@ -96,7 +96,7 @@ public class ShopManager : MonoBehaviour
         }
     }
 
-    public void SaveShop()
+   /* public void SaveShop()
     {
         SavingSystem.SaveShop(this);
     }
@@ -107,5 +107,5 @@ public class ShopManager : MonoBehaviour
 
         shopItems = data.shopitems;
         ShopButtonInfo.instance.Button();
-    } 
+    } */
 }
