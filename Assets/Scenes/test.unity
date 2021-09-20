@@ -12412,6 +12412,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyDamageGiven: 1
   toxinTickTimers: 
+--- !u!114 &1246000873 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -8599738965220930533, guid: 45917edf93c59cf439b4311c4ad24272,
+    type: 3}
+  m_PrefabInstance: {fileID: 1236135532551849511}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51f3be6f0699e224a8df4458f50592b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1248002666
 GameObject:
   m_ObjectHideFlags: 0
@@ -14187,6 +14199,11 @@ PrefabInstance:
       propertyPath: highscoreText
       value: 
       objectReference: {fileID: 1162926157}
+    - target: {fileID: 3460267455692114222, guid: 58ac97bab09d91142ad553b4d470ca9e,
+        type: 3}
+      propertyPath: savingSystem
+      value: 
+      objectReference: {fileID: 1246000873}
     - target: {fileID: 3460267455692114224, guid: 58ac97bab09d91142ad553b4d470ca9e,
         type: 3}
       propertyPath: m_Name
