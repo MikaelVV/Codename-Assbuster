@@ -20,6 +20,8 @@ public  class SavingSystem : MonoBehaviour
     {
         string json = JsonUtility.ToJson(data);
         WriteToFile(file, json);
+
+        Debug.Log("Tallennettu!");
     }
 
     public void Load()

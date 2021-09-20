@@ -7301,18 +7301,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1044814429 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 454568808, guid: d3e99a6bd2753eb4299b449432011f2b,
-    type: 3}
-  m_PrefabInstance: {fileID: 227623959670655200}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 781fcd33eb815a543be1ccf97083bc0b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1113676372
 GameObject:
   m_ObjectHideFlags: 0
@@ -14469,9 +14457,21 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 274428863, guid: 726152eb60d8acc43ab6b4f823d57b53, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 274428863, guid: 726152eb60d8acc43ab6b4f823d57b53, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1044814429}
+      objectReference: {fileID: 1246000873}
+    - target: {fileID: 274428863, guid: 726152eb60d8acc43ab6b4f823d57b53, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Save
+      objectReference: {fileID: 0}
+    - target: {fileID: 274428863, guid: 726152eb60d8acc43ab6b4f823d57b53, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 3148538656918223924, guid: 726152eb60d8acc43ab6b4f823d57b53,
         type: 3}
       propertyPath: savingSystem
