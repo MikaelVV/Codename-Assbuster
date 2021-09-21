@@ -344,7 +344,7 @@ MonoBehaviour:
   bullet: {fileID: 9207734184808863121, guid: 4460b21132dc4364489fcd5bb193305a, type: 3}
   firepoint: {fileID: 1126013919}
   firepoint2: {fileID: 382153687}
-  ShootTime: 1
+  ShootTime: 2
   sprite1: {fileID: 166026833}
   sprite2: {fileID: 2128723710}
   BombLock: 0
@@ -15273,7 +15273,7 @@ Transform:
   m_LocalScale: {x: 1.6283938, y: 1.5197469, z: 1.1014941}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1498742459
 GameObject:
@@ -25335,77 +25335,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1001 &9207734185292036511
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 9207734184808863118, guid: 4460b21132dc4364489fcd5bb193305a,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 18.439999
-      objectReference: {fileID: 0}
-    - target: {fileID: 9207734184808863118, guid: 4460b21132dc4364489fcd5bb193305a,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -2.23
-      objectReference: {fileID: 0}
-    - target: {fileID: 9207734184808863118, guid: 4460b21132dc4364489fcd5bb193305a,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9207734184808863118, guid: 4460b21132dc4364489fcd5bb193305a,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9207734184808863118, guid: 4460b21132dc4364489fcd5bb193305a,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9207734184808863118, guid: 4460b21132dc4364489fcd5bb193305a,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9207734184808863118, guid: 4460b21132dc4364489fcd5bb193305a,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9207734184808863118, guid: 4460b21132dc4364489fcd5bb193305a,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 9207734184808863118, guid: 4460b21132dc4364489fcd5bb193305a,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9207734184808863118, guid: 4460b21132dc4364489fcd5bb193305a,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9207734184808863118, guid: 4460b21132dc4364489fcd5bb193305a,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9207734184808863121, guid: 4460b21132dc4364489fcd5bb193305a,
-        type: 3}
-      propertyPath: m_Name
-      value: boss1 shot
-      objectReference: {fileID: 0}
-    - target: {fileID: 9207734184808863121, guid: 4460b21132dc4364489fcd5bb193305a,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 4460b21132dc4364489fcd5bb193305a, type: 3}
