@@ -580,6 +580,7 @@ GameObject:
   m_Component:
   - component: {fileID: 836459337}
   - component: {fileID: 836459338}
+  - component: {fileID: 836459339}
   m_Layer: 0
   m_Name: lazer lazer1
   m_TagString: Untagged
@@ -651,6 +652,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &836459339
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 836459336}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.66}
+    newSize: {x: 0.16, y: 0.7884862}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 2
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.75}
+  m_EdgeRadius: 0
 --- !u!1 &898996044
 GameObject:
   m_ObjectHideFlags: 0
@@ -760,6 +787,7 @@ GameObject:
   m_Component:
   - component: {fileID: 922504275}
   - component: {fileID: 922504276}
+  - component: {fileID: 922504277}
   m_Layer: 0
   m_Name: lazer lazer3
   m_TagString: Untagged
@@ -831,6 +859,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &922504277
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 922504274}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.66}
+    newSize: {x: 0.16, y: 0.69485545}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 2
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.66}
+  m_EdgeRadius: 0
 --- !u!1 &1180924228
 GameObject:
   m_ObjectHideFlags: 0
@@ -1442,6 +1496,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1613059460}
   - component: {fileID: 1613059461}
+  - component: {fileID: 1613059462}
   m_Layer: 0
   m_Name: lazer lazer2
   m_TagString: Untagged
@@ -1513,6 +1568,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1613059462
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1613059459}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.66}
+    newSize: {x: 0.16, y: 0.7596462}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 2
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.66}
+  m_EdgeRadius: 0
 --- !u!1 &1667997243
 GameObject:
   m_ObjectHideFlags: 0
