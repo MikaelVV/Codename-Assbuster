@@ -146,10 +146,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 133003958}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.76, y: 5.48, z: 0}
+  m_LocalPosition: {x: 0.31600046, y: 0.2579999, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 383544328}
+  m_Father: {fileID: 1476066887}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &133003960
@@ -351,14 +351,12 @@ Transform:
   m_LocalPosition: {x: 17.678, y: 0, z: 0}
   m_LocalScale: {x: 1.6695975, y: 1.6695975, z: 1.6695975}
   m_Children:
-  - {fileID: 133003959}
   - {fileID: 1476066887}
   - {fileID: 1180924229}
   - {fileID: 1720111017}
   - {fileID: 1667997244}
   - {fileID: 1227920854}
   - {fileID: 1936539814}
-  - {fileID: 1499196706}
   - {fileID: 898996045}
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -499,6 +497,7 @@ GameObject:
   m_Component:
   - component: {fileID: 898996045}
   - component: {fileID: 898996046}
+  - component: {fileID: 898996047}
   m_Layer: 0
   m_Name: boss2 laserport
   m_TagString: Untagged
@@ -516,9 +515,10 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 6.764, y: 0.71, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1499196706}
   m_Father: {fileID: 383544328}
-  m_RootOrder: 8
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &898996046
 SpriteRenderer:
@@ -570,6 +570,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!70 &898996047
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 898996044}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.1732627, y: 0}
+  m_Size: {x: 2.136349, y: 6.85}
+  m_Direction: 0
 --- !u!1 &1180924228
 GameObject:
   m_ObjectHideFlags: 0
@@ -599,7 +615,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 383544328}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1180924230
 SpriteRenderer:
@@ -680,7 +696,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 383544328}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1227920855
 SpriteRenderer:
@@ -892,6 +908,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1476066887}
   - component: {fileID: 1476066888}
+  - component: {fileID: 1476066889}
   m_Layer: 0
   m_Name: boss2 turretBase
   m_TagString: Untagged
@@ -909,9 +926,10 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 4.444, y: 5.222, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 133003959}
   m_Father: {fileID: 383544328}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1476066888
 SpriteRenderer:
@@ -963,6 +981,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1476066889
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1476066886}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.013855398, y: -0.0046180487}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.3, y: 2.24}
+    newSize: {x: 3.3, y: 2.24}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.7919989, y: 1.7504714}
+  m_EdgeRadius: 0
 --- !u!1 &1499196705
 GameObject:
   m_ObjectHideFlags: 0
@@ -988,11 +1032,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1499196705}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.778, y: 0.712, z: 0}
+  m_LocalPosition: {x: 0.014000416, y: 0.0020000339, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 383544328}
-  m_RootOrder: 7
+  m_Father: {fileID: 898996045}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1499196707
 SpriteRenderer:
@@ -1073,7 +1117,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 383544328}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1667997245
 SpriteRenderer:
@@ -1154,7 +1198,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 383544328}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1720111018
 SpriteRenderer:
@@ -1235,7 +1279,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 383544328}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1936539815
 SpriteRenderer:
