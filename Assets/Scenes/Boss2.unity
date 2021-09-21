@@ -596,6 +596,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1180924229}
   - component: {fileID: 1180924230}
+  - component: {fileID: 1180924231}
   m_Layer: 0
   m_Name: boss2 tykki
   m_TagString: Untagged
@@ -667,6 +668,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &1180924231
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1180924228}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.74830157}
+  serializedVersion: 2
+  m_Radius: 1.6816986
 --- !u!1 &1227920853
 GameObject:
   m_ObjectHideFlags: 0
@@ -1179,6 +1196,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1720111017}
   - component: {fileID: 1720111018}
+  - component: {fileID: 1720111019}
   m_Layer: 0
   m_Name: boss2 nob
   m_TagString: Untagged
@@ -1250,6 +1268,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!70 &1720111019
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1720111016}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.046787508, y: -0.6199333}
+  m_Size: {x: 6.2442536, y: 4.629919}
+  m_Direction: 1
 --- !u!1 &1936539813
 GameObject:
   m_ObjectHideFlags: 0
