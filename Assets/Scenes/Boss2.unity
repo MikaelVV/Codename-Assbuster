@@ -690,7 +690,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 0.16, y: 0.66}
-    newSize: {x: 0.16, y: 0.7884862}
+    newSize: {x: 0.16, y: 45}
     adaptiveTilingThreshold: 0.5
     drawMode: 2
     adaptiveTiling: 0
