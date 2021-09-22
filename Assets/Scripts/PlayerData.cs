@@ -12,6 +12,7 @@ public class PlayerData
     public int shoptokens = 150;
     public int price = 2;
     public int quantity = 11;
+    public int currentItem;
 
     public bool[] itemsUnlocked;
 

@@ -726,7 +726,7 @@ PrefabInstance:
     - target: {fileID: 39204835348215133, guid: 44ee5e04c08ff624897a0747b39cab28,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44ee5e04c08ff624897a0747b39cab28, type: 3}
@@ -743,6 +743,28 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7940731038225319097}
     m_Modifications:
+    - target: {fileID: 274428861, guid: 21e85a239d152ce44a60634311f03dc3, type: 3}
+      propertyPath: m_Name
+      value: LoadLevelSelectButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 274428863, guid: 21e85a239d152ce44a60634311f03dc3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1700530572904865101, guid: ec3236ff72a79f54c94bb9469e49b8d4,
+        type: 3}
+    - target: {fileID: 274428863, guid: 21e85a239d152ce44a60634311f03dc3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LevelSelectButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 1057142731, guid: 21e85a239d152ce44a60634311f03dc3, type: 3}
+      propertyPath: m_Text
+      value: Level Select
+      objectReference: {fileID: 0}
+    - target: {fileID: 5008847161280217329, guid: 21e85a239d152ce44a60634311f03dc3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5008847162471428585, guid: 21e85a239d152ce44a60634311f03dc3,
         type: 3}
       propertyPath: m_Name
@@ -872,6 +894,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ScreenTransitionStart
+      objectReference: {fileID: 0}
+    - target: {fileID: 8853864263035216712, guid: bf1c04838b1af7b4591ba1e532b22b70,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8853864263035216713, guid: bf1c04838b1af7b4591ba1e532b22b70,
         type: 3}

@@ -128,23 +128,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 274428863, guid: 726152eb60d8acc43ab6b4f823d57b53, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1030319703}
-    - target: {fileID: 274428863, guid: 726152eb60d8acc43ab6b4f823d57b53, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Save
-      objectReference: {fileID: 0}
-    - target: {fileID: 949406980, guid: 726152eb60d8acc43ab6b4f823d57b53, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3148538657807519022, guid: 726152eb60d8acc43ab6b4f823d57b53,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7940731037531914276, guid: 726152eb60d8acc43ab6b4f823d57b53,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -602,19 +585,14 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3460267455692114222, guid: 58ac97bab09d91142ad553b4d470ca9e,
         type: 3}
-      propertyPath: scoreText
-      value: 
-      objectReference: {fileID: 252696359}
-    - target: {fileID: 3460267455692114222, guid: 58ac97bab09d91142ad553b4d470ca9e,
-        type: 3}
-      propertyPath: highscoreText
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3460267455692114222, guid: 58ac97bab09d91142ad553b4d470ca9e,
-        type: 3}
       propertyPath: savingSystem
       value: 
       objectReference: {fileID: 1030319703}
+    - target: {fileID: 3460267455692114222, guid: 58ac97bab09d91142ad553b4d470ca9e,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 252696359}
     - target: {fileID: 3460267455692114224, guid: 58ac97bab09d91142ad553b4d470ca9e,
         type: 3}
       propertyPath: m_Name

@@ -43,5 +43,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40d5dfcfb9f3b8f489f78ef3836d8784, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  savingSystem: {fileID: 0}
   scoreText: {fileID: 0}
-  highscoreText: {fileID: 0}

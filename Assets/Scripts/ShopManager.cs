@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
+[SerializeField]
 public class ShopManager : MonoBehaviour
 {
     public static ShopManager instance;
@@ -19,12 +20,12 @@ public class ShopManager : MonoBehaviour
     private void Awake()
     {
         instance = this;
-
+        itemsUnlocked = savingSystem.data.itemsUnlocked;
     }
 
     void Start()
     {
-        itemsUnlocked = savingSystem.data.itemsUnlocked;
+
     }
 
     public void Update()

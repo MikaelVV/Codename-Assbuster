@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+[SerializeField]
 public class ShopButtons : MonoBehaviour
 {
+    public static ShopButtons instance;
     public SavingSystem savingSystem;
     public ShopManager shopManager;
 
@@ -13,9 +15,14 @@ public class ShopButtons : MonoBehaviour
 
     public int currentItem;
 
+    private void Awake()
+    {
+        instance = this;
+        currentItem = savingSystem.data.currentItem;
+    }
     void Start()
     {
-        
+
     }
 
 
