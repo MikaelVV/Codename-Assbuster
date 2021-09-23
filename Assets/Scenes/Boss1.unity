@@ -344,7 +344,7 @@ MonoBehaviour:
   bullet: {fileID: 9207734184808863121, guid: 4460b21132dc4364489fcd5bb193305a, type: 3}
   firepoint: {fileID: 1126013919}
   firepoint2: {fileID: 382153687}
-  ShootTime: 2
+  ShootTime: 1.5
   sprite1: {fileID: 166026833}
   sprite2: {fileID: 2128723710}
   BombLock: 0
