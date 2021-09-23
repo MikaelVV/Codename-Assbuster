@@ -358,16 +358,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1700530571456748862, guid: ec3236ff72a79f54c94bb9469e49b8d4,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1700530571818019942, guid: ec3236ff72a79f54c94bb9469e49b8d4,
-        type: 3}
-      propertyPath: m_Interactable
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1700530571847848666, guid: ec3236ff72a79f54c94bb9469e49b8d4,
         type: 3}
       propertyPath: savingSystem
@@ -512,11 +502,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LevelSelectCanvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 6479811029039949601, guid: ec3236ff72a79f54c94bb9469e49b8d4,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8512581451325050806, guid: ec3236ff72a79f54c94bb9469e49b8d4,
         type: 3}
