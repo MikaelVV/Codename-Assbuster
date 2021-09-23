@@ -9,10 +9,15 @@ public class WeaponConfirmer : MonoBehaviour
 
     public Button button;
 
+    public GameObject selectedGun;
+
     public int currentWeapon;
+    public bool chooseGun;
+
 
     void Start()
     {
+        selectedGun = savingSystem.data.selectedGun;
         currentWeapon = savingSystem.data.currentItem;
     }
 
@@ -28,5 +33,10 @@ public class WeaponConfirmer : MonoBehaviour
         {
             button.interactable = false;
         }
+    }
+
+    public void OnClick()
+    {
+        //selectedGun = [currentWeapon];
     }
 }

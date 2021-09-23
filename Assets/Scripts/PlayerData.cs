@@ -7,6 +7,8 @@ using UnityEngine.SceneManagement;
 [System.Serializable]
 public class PlayerData
 {
+    public GameObject selectedGun;
+
     public int score = 0;
 
     public int shoptokens = 150;

@@ -358,41 +358,88 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1700530571456748862, guid: ec3236ff72a79f54c94bb9469e49b8d4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1700530571847848666, guid: ec3236ff72a79f54c94bb9469e49b8d4,
+        type: 3}
+      propertyPath: savingSystem
+      value: 
+      objectReference: {fileID: 700557921}
+    - target: {fileID: 1700530571847848666, guid: ec3236ff72a79f54c94bb9469e49b8d4,
+        type: 3}
+      propertyPath: gun
+      value: 
+      objectReference: {fileID: 2800945604164225439, guid: 711ad429801b53c45a02f282d5f70c4e,
+        type: 3}
+    - target: {fileID: 1700530571847848667, guid: ec3236ff72a79f54c94bb9469e49b8d4,
         type: 3}
       propertyPath: savingSystem
       value: 
       objectReference: {fileID: 700557921}
     - target: {fileID: 1700530571847848667, guid: ec3236ff72a79f54c94bb9469e49b8d4,
         type: 3}
+      propertyPath: gun
+      value: 
+      objectReference: {fileID: 2037983112766172433, guid: f3b138b8ed60ce04db6039936fc2c167,
+        type: 3}
+    - target: {fileID: 1700530571847848668, guid: ec3236ff72a79f54c94bb9469e49b8d4,
+        type: 3}
       propertyPath: savingSystem
       value: 
       objectReference: {fileID: 700557921}
     - target: {fileID: 1700530571847848668, guid: ec3236ff72a79f54c94bb9469e49b8d4,
+        type: 3}
+      propertyPath: gun
+      value: 
+      objectReference: {fileID: 7248534459177958045, guid: 1f4fa5734ca3bd840b99bc9597b9fb0a,
+        type: 3}
+    - target: {fileID: 1700530571847848669, guid: ec3236ff72a79f54c94bb9469e49b8d4,
         type: 3}
       propertyPath: savingSystem
       value: 
       objectReference: {fileID: 700557921}
     - target: {fileID: 1700530571847848669, guid: ec3236ff72a79f54c94bb9469e49b8d4,
         type: 3}
+      propertyPath: gun
+      value: 
+      objectReference: {fileID: 6298053074552953289, guid: 0a1fdc51918697844b28dc17765d57d6,
+        type: 3}
+    - target: {fileID: 1700530571847848670, guid: ec3236ff72a79f54c94bb9469e49b8d4,
+        type: 3}
       propertyPath: savingSystem
       value: 
       objectReference: {fileID: 700557921}
     - target: {fileID: 1700530571847848670, guid: ec3236ff72a79f54c94bb9469e49b8d4,
+        type: 3}
+      propertyPath: gun
+      value: 
+      objectReference: {fileID: 7641983093302361849, guid: 351e749421dba5d48a07aa4e7a8165a9,
+        type: 3}
+    - target: {fileID: 1700530571847848671, guid: ec3236ff72a79f54c94bb9469e49b8d4,
         type: 3}
       propertyPath: savingSystem
       value: 
       objectReference: {fileID: 700557921}
     - target: {fileID: 1700530571847848671, guid: ec3236ff72a79f54c94bb9469e49b8d4,
         type: 3}
-      propertyPath: savingSystem
+      propertyPath: gun
       value: 
-      objectReference: {fileID: 700557921}
+      objectReference: {fileID: 124512940828023169, guid: b0c50a0749d73a44982a02ca3cbdaa0f,
+        type: 3}
     - target: {fileID: 1700530571847848672, guid: ec3236ff72a79f54c94bb9469e49b8d4,
         type: 3}
       propertyPath: savingSystem
       value: 
       objectReference: {fileID: 700557921}
+    - target: {fileID: 1700530571847848672, guid: ec3236ff72a79f54c94bb9469e49b8d4,
+        type: 3}
+      propertyPath: gun
+      value: 
+      objectReference: {fileID: 1599670015604096844, guid: 18dbc15c35dac1b44b606ffda1d68074,
+        type: 3}
     - target: {fileID: 1700530572904865102, guid: ec3236ff72a79f54c94bb9469e49b8d4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -502,6 +549,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LevelSelectCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 1700530573097827232, guid: ec3236ff72a79f54c94bb9469e49b8d4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6479811029039949601, guid: ec3236ff72a79f54c94bb9469e49b8d4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8512581451325050806, guid: ec3236ff72a79f54c94bb9469e49b8d4,
         type: 3}
