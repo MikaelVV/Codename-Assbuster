@@ -520,8 +520,6 @@ Transform:
   - {fileID: 1180924229}
   - {fileID: 1720111017}
   - {fileID: 1667997244}
-  - {fileID: 1227920854}
-  - {fileID: 1936539814}
   - {fileID: 898996045}
   m_Father: {fileID: 0}
   m_RootOrder: 6
@@ -820,7 +818,7 @@ Transform:
   m_Children:
   - {fileID: 1499196706}
   m_Father: {fileID: 383544328}
-  m_RootOrder: 6
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &898996046
 SpriteRenderer:
@@ -1150,12 +1148,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1227920853}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.54, y: 10.32, z: 0}
+  m_LocalPosition: {x: -1.4480007, y: 0.079002194, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1658768625}
-  m_Father: {fileID: 383544328}
-  m_RootOrder: 4
+  m_Father: {fileID: 1667997244}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1227920855
 SpriteRenderer:
@@ -1827,6 +1825,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1667997244}
   - component: {fileID: 1667997245}
+  - component: {fileID: 1667997246}
   m_Layer: 0
   m_Name: boss2 mortar4
   m_TagString: Untagged
@@ -1844,7 +1843,9 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -3.866, y: 10.443, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1936539814}
+  - {fileID: 1227920854}
   m_Father: {fileID: 383544328}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1898,6 +1899,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1667997246
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1667997243}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: eaf5711fe343038479182d992fab269c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1717800920
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2170,12 +2190,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1936539813}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.25, y: 10.23, z: 0}
+  m_LocalPosition: {x: -0.158, y: -0.011, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 357899057}
-  m_Father: {fileID: 383544328}
-  m_RootOrder: 5
+  m_Father: {fileID: 1667997244}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1936539815
 SpriteRenderer:
@@ -2234,6 +2254,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 437007105349378500, guid: 407b0b7a96116d84c8880288b2236bfe,
+        type: 3}
+      propertyPath: m_Text
+      value: Concrian Warship
+      objectReference: {fileID: 0}
+    - target: {fileID: 1585803931052424686, guid: 407b0b7a96116d84c8880288b2236bfe,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 557.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1585803931052424686, guid: 407b0b7a96116d84c8880288b2236bfe,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 454.3852
+      objectReference: {fileID: 0}
+    - target: {fileID: 1585803931052424686, guid: 407b0b7a96116d84c8880288b2236bfe,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -494.8
+      objectReference: {fileID: 0}
     - target: {fileID: 6406066259892593493, guid: 407b0b7a96116d84c8880288b2236bfe,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -2353,6 +2393,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BossLevelCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 6406066260351117260, guid: 407b0b7a96116d84c8880288b2236bfe,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8522160681548888231, guid: 407b0b7a96116d84c8880288b2236bfe,
         type: 3}
